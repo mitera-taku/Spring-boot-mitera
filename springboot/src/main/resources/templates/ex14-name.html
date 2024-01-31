@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="jp" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="2">
+    <span th:each="name,status:${nameList}">
+       <th> <span th:text="${status.index+1}"></span>:</th>
+    </span>
+    <span th:each="name,status:${nameList}">
+    <th> <span th:text="${name}"></span><br></th>
+    </span>
+</table>
+    
+</body>
+</html>

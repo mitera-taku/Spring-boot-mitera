@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja" xmlns:th="http:www//thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    プロパティを持たないStringオブジェクトをひょうじ<br>
+    <span th:text="${name}">だみー</span><br>単順に上書き<br>
+
+    Carオブジェクトを表示<br>
+    <span th:text="${car.speed}">1</span>
+    
+    <br>
+    <span th:object="${car}">
+        <span th:text="*{speed}">1</span><br>　バリューを上書き
+
+    プロパティを持たないStringオブジェクトをひょうじサニタイジングなし<br>
+    <span th:utext="${name}">だみー</span><br>
+
+    <span th:text="#{aaa}">メッセージ</span><br>
+
+    
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="jp" xmlns:th="http:///www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="finished.html" th:action="@{/ex12/register-member}" method="post"
+    th:obuject="${ReceiveForm}">
+    名前：<input type="text" name="name" th:field="*{name}"><br>
+
+    年齢：<input type="text" name="age" th:field="*{age}"><br>
+
+    所持金：<input type="text" name="money" th:field="*{money}"><br>
+
+    コメント:<br>
+    <textarea cols="10" rows="10" name="comment" th:field="*{comment}"></textarea><br>
+
+    <button>送信</button>
+
+
+</form>
+    
+</body>
+</html>

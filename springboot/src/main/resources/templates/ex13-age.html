@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="jp" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <span th:if="${member.age>=20}" th:text="${成人です}">青年ですか</span>
+    <span th:unless="${member.age>=20}" th:text="${未成年です}">青年ですか？？？</span>
+    aaa
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="jp" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>ユーザー登録</h1>
+    <form action="ex11-out.html"
+     th:action="@{/ex11/out}" method="post"
+     th:object="${ReceiveForm}">
+        名前：<input type="text" name="name" name="*{name}"><br>
+        年齢：<input type="text" name="age" name="*{age}"><br>
+
+        <select name="brithday"><br>
+            <option value="1">2000/01/01</option>
+            <option value="1">2000/02/01</option>
+            <option value="1">2000/03/01</option>
+            <option value="1">2000/04/01</option>
+            <option value="1">2000/05/01</option>
+            <option value="1">2000/06/01</option>
+            <option value="1">2000/07/01</option>
+            <option value="1">2000/08/01</option>
+            <option value="1">2000/09/01</option>
+            <option value="1">2000/10/01</option>
+            <option value="1">2000/11/01</option>
+            <option value="1">2000/12/01</option>
+        </select><br>
+
+        <textarea name="comment" cols="30" rows="10"></textarea><br>
+        <input type="submit" value="送信"><br>
+
+    
+</body>
+</html>

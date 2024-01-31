@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="jp" xmlns:th="http:www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<form action="finished"
+th:action="@{/ex04/receive-inform}" method="post">
+    趣味：<input type="text" name="hobby"><br>
+    <button type="submit">送信</button>
+</form>
+    
+</body>
+</html>

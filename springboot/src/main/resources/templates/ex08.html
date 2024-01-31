@@ -1,0 +1,22 @@
+<html lang="ja" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="finished.html"
+    th:action="@{/ex06/receive-inf}" method="post"
+    th:object="${receive-inform}">
+
+        <!-- th:object="${receive-if}"> -->
+        名前：<input type="text" name="name" th:field="*{name}">
+    名前：<input type="text" name="name" th:field="{name}"><br>
+    年齢：<input type="text" name="age" th:field="{name}"><br>
+    コメント：
+    <br><textarea name="comment" rows="4" cols="30"></textarea><br>
+    <textarea name="comment" rows="30" cols="20"></textarea>
+    <button type="submit">登録</button>
+</form>
+</body>
+</html>
